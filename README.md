@@ -19,9 +19,6 @@ Imagine this: You work **hard** for 25 minutes, then take a **short** 5-minute b
 ✅ **Dark Mode:** Sleek and easy on the eyes.
 ✅ **Open Source:** Love tweaking things? Contribute on GitHub!
 
-## 📸 Screenshot:
-
-![Home](https://raw.githubusercontent.com/Abhiram-Sharma/pomodoro-Timer/main/screenshots/Home.png)
 
 ## 🚀 Getting Started
 
