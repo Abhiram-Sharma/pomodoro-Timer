@@ -1,6 +1,6 @@
 # Pomodoro Timer ⏳
 
-![Pomodoro Timer](https://abhiram-sharma.github.io/pomodoro-Timer/)
+![Pomodoro Timer](https://abhiram-sharma.github.io/pomodoro.png/)
 
 ## 🚀 Boost Your Productivity Like a Pro!
 
