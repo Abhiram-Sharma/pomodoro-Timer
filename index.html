@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Timer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #121212;
+            color: white;
+            margin: 0;
+            overflow-x: hidden;
+            text-align: center;
+        }
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 15px 0;
+            text-align: center;
+            z-index: 1000;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+        .navbar a:hover {
+            color: #0f62fe;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+        h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+        .timer {
+            font-size: 64px;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+        .controls button {
+            padding: 15px 20px;
+            margin: 10px;
+            border: none;
+            cursor: pointer;
+            border-radius: 10px;
+            background: #0f62fe;
+            color: white;
+            font-size: 18px;
+            transition: transform 0.2s;
+        }
+        .controls button:hover {
+            background: #0a4eb0;
+            transform: scale(1.1);
+        }
+        .settings input {
+            width: 60px;
+            padding: 10px;
+            text-align: center;
+            font-size: 18px;
+        }
+        .info-section {
+            padding: 50px;
+            text-align: center;
+            background: #1e1e1e;
+        }
+        .footer {
+            background: #000;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            margin-top: 50px;
+        }
+        .footer a {
+            color: #0f62fe;
+            text-decoration: none;
+            font-size: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .footer img {
+            width: 25px;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="#timer-section">Timer</a>
+        <a href="#info-section">About Pomodoro</a>
+    </div>
+    
+    <div class="container" id="timer-section">
+        <h1 data-aos="fade-up">Pomodoro Timer</h1>
+        <div class="timer" id="timer" data-aos="zoom-in">25:00</div>
+        <div class="controls" data-aos="fade-up">
+            <button onclick="startTimer()">Start</button>
+            <button onclick="pauseTimer()">Pause</button>
+            <button onclick="resetTimer()">Reset</button>
+        </div>
+        <div class="settings" data-aos="fade-up">
+            <p>Work: <input type="number" id="workTime" value="25"> mins</p>
+            <p>Break: <input type="number" id="breakTime" value="5"> mins</p>
+        </div>
+    </div>
+    
+    <div class="info-section" id="info-section">
+        <h2 data-aos="fade-up">🚀 What is the Pomodoro Technique?</h2>
+        <p data-aos="fade-up" style="font-size: 18px; font-weight: 600;">A game-changer for productivity! 🎯</p>
+        <p data-aos="fade-up" style="max-width: 600px; margin: auto;">Work for a focused 25-minute sprint ⏳, then take a 5-minute break 🛀. Repeat this 4 times, then reward yourself with a longer break! 🎉</p>
+        <p data-aos="fade-up" style="font-size: 16px;">Boost your efficiency, beat procrastination, and stay in the zone. Try it now! 🔥</p>
+    </div>
+    
+    <div class="footer">
+        Made with ❤️ by Abhiram Sharma &copy; 2025
+        <a href="https://github.com/Abhiram-Sharma/pomodoro-Timer" target="_blank">
+            View on GitHub <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub Logo">
+        </a>
+    </div>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            AOS.init({ duration: 1000 });
+        });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+</body>
+</html>
